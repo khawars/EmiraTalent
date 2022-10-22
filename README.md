@@ -6,8 +6,9 @@ The input of the search terms will be single word each the utility will display 
 
 ### Architecture Diagram
 ![architecture](https://raw.githubusercontent.com/khawars/EmiraTalent/main/screenshots/architecture.png)
+
 ### Main screen to choose file source
-[![main](https://raw.githubusercontent.com/khawars/EmiraTalent/main/screenshots/thumbs/file1-thumb.png)](https://raw.githubusercontent.com/khawars/EmiraTalent/main/screenshots/main.png)
+[![main](https://raw.githubusercontent.com/khawars/EmiraTalent/main/screenshots/thumbs/main-thumb.png)](https://raw.githubusercontent.com/khawars/EmiraTalent/main/screenshots/main.png)
 
 ### File Browser
 [![file1](https://raw.githubusercontent.com/khawars/EmiraTalent/main/screenshots/thumbs/file1-thumb.png)](https://raw.githubusercontent.com/khawars/EmiraTalent/main/screenshots/file1.png)
