@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="BYZ-38-t0r" customClass="SearchViewController" customModule="EmiraTalentAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MwU-Fd-UaB">
+                                <rect key="frame" x="20" y="375" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="981-Sk-cer"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rhy-0S-Fne">
+                                <rect key="frame" x="20" y="175" width="374" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="cJr-Y7-f2e"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stY-NS-hQN">
+                                <rect key="frame" x="20" y="115" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DBU-p0-Hjx"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Load Data"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionLoadData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdi-zN-1Ew"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6qS-rj-zAV">
+                                <rect key="frame" x="20" y="64" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Files"/>
+                                    <segment title="Bundle"/>
+                                    <segment title="API"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6qS-rj-zAV" secondAttribute="trailing" constant="20" id="OV4-6b-Wie"/>
+                            <constraint firstItem="6qS-rj-zAV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R1g-JY-8Ua"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MwU-Fd-UaB" secondAttribute="trailing" constant="20" id="SLI-Iu-1ym"/>
+                            <constraint firstItem="MwU-Fd-UaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ash-s1-qaz"/>
+                            <constraint firstItem="stY-NS-hQN" firstAttribute="leading" secondItem="6qS-rj-zAV" secondAttribute="leading" id="bKt-zG-rdj"/>
+                            <constraint firstItem="Rhy-0S-Fne" firstAttribute="leading" secondItem="6qS-rj-zAV" secondAttribute="leading" id="by4-pf-A7R"/>
+                            <constraint firstItem="Rhy-0S-Fne" firstAttribute="top" secondItem="stY-NS-hQN" secondAttribute="bottom" constant="20" id="d0g-H8-vGu"/>
+                            <constraint firstItem="Rhy-0S-Fne" firstAttribute="trailing" secondItem="6qS-rj-zAV" secondAttribute="trailing" id="eBF-EY-j62"/>
+                            <constraint firstItem="stY-NS-hQN" firstAttribute="top" secondItem="6qS-rj-zAV" secondAttribute="bottom" constant="20" id="kA6-GC-79I"/>
+                            <constraint firstItem="MwU-Fd-UaB" firstAttribute="top" secondItem="Rhy-0S-Fne" secondAttribute="bottom" id="nw3-EB-tnf"/>
+                            <constraint firstItem="stY-NS-hQN" firstAttribute="trailing" secondItem="6qS-rj-zAV" secondAttribute="trailing" id="rgB-K5-itX"/>
+                            <constraint firstItem="6qS-rj-zAV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sg9-a7-kCP"/>
+                            <constraint firstItem="Rhy-0S-Fne" firstAttribute="top" secondItem="stY-NS-hQN" secondAttribute="bottom" constant="20" id="tDl-nL-L7R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLoadData" destination="stY-NS-hQN" id="qEp-Rd-x3N"/>
+                        <outlet property="segmentedControl" destination="6qS-rj-zAV" id="VAB-hk-WCk"/>
+                        <outlet property="txtHistory" destination="Rhy-0S-Fne" id="ZgT-y2-XFS"/>
+                        <outlet property="txtSearch" destination="MwU-Fd-UaB" id="10m-HU-bIU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
